@@ -6,8 +6,8 @@ Project ELARA is a full-stack web application with separate User and Admin appli
 
 | Roll No | Name | GitHub Username |
 |---|---|---|
-| 24ESKCS054 | Anurag Gurjar | anuraggurjar96 |
-| 24ESKCS054 | Anurag Gurjar | anuraggurjar96 |
+| 24ESKCS040 | Aman Mehta | aman-mehta99 |
+| 24ESKCS040 | Aman Mehta | aman-mehta99 |
 
 ## Project Structure
 
@@ -42,4 +42,4 @@ GET /health returns the running commit SHA.
 
 ## Repository
 
-https://github.com/skit-devops-2026/devops-24ESKCS054
+https://github.com/skit-devops-2026/devops-24ESKCS040
