@@ -1,27 +1,28 @@
-﻿# Project ELARA
+# Project ELARA
 
-Project ELARA is a full-stack web application with separate User and Admin applications.
+[![CI](https://github.com/skit-devops-2026/DEVOPS_24ESKCS040/actions/workflows/ci.yml/badge.svg)](https://github.com/skit-devops-2026/DEVOPS_24ESKCS040/actions/workflows/ci.yml)
+
+Project ELARA is a full-stack web application with separate User and Admin applications, backend API services, and automated CI/CD pipelines.
 
 ## Author
 
 | Roll No | Name | GitHub Username |
 |---|---|---|
 | 24ESKCS040 | Aman Mehta | aman-mehta99 |
-| 24ESKCS040 | Aman Mehta | aman-mehta99 |
 
 ## Project Structure
 
-- User/ — User application
-- dmin/ — Admin application
-- ackend/ — Backend application
-- 	ests/ — Automated tests
-- .github/workflows/ci.yml — GitHub Actions CI
-- Jenkinsfile — Jenkins pipeline
+- User/ — User frontend application (Vite + React)
+- admin/ — Admin dashboard application (Vite + React)
+- backend/ — Express backend REST API service
+- tests/ — Automated test suite
+- .github/workflows/ci.yml — GitHub Actions CI pipeline
+- Jenkinsfile — Declarative Jenkins CI/CD pipeline
 - Makefile — Project automation commands
-- scripts/ — Repository checks
-- docs/ — Documentation
+- scripts/ — Repository and hygiene checks
+- docs/ — Project documentation
 - monitoring/ — Monitoring configuration
-- k8s/ — Kubernetes manifests
+- k8s/ — Kubernetes deployment manifests
 
 ## DevOps
 
@@ -34,12 +35,25 @@ The CI pipeline performs:
 - User application build
 - Admin application build
 
-Jenkins is used for the CI/CD pipeline.
+Jenkins is configured for automated build and deployment via `Jenkinsfile`.
+
+## Automated Testing & Commands
+
+```bash
+# Install dependencies
+make install
+
+# Run automated tests
+make test
+
+# Build User and Admin applications
+make build
+```
 
 ## Health Endpoint
 
-GET /health returns the running commit SHA.
+`GET /health` returns the running commit SHA and system status.
 
 ## Repository
 
-https://github.com/skit-devops-2026/devops-24ESKCS040
+https://github.com/skit-devops-2026/DEVOPS_24ESKCS040
