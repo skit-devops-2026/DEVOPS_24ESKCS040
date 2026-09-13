@@ -1,7 +1,16 @@
 backend_local_backup/
+backend_incomplete/
 
 # Dependencies and local environment
 **/node_modules/
 **/dist/
+**/.env
+**/.env.*
 backend/.env
-backend_incomplete/
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Logs and system files
+*.log
+.DS_Store
+Thumbs.db
